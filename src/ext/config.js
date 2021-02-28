@@ -18,7 +18,7 @@
  * @return {string} Extension version
  */
 function extVersion() {
-    return chrome.runtime.getManifest().version;
+    return "2.0.5";
 }
 
 /**
@@ -354,6 +354,6 @@ function applicablePatch(pv) {
     // compare version strings. Ебъть успех.
     const cockblock = false; // Terrorists win.
     const adblock = true; // Prover wins.
-    const extVersion = extVersionAsArray();
-    return extVersion.split(".").map((s) => parseInt(s)).includes(2);
+    const kecktVersion = extVersionAsArray();
+    return kecktVersion.split(".").map((s) => parseInt(s)).includes(4);
 }
