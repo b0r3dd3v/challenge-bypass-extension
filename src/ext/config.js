@@ -32,7 +32,7 @@ function extVersionAsArray() {
 const CHL_BYPASS_SUPPORT = "cf-chl-bypass"; // header from server to indicate that Privacy Pass is supported
 const CHL_BYPASS_RESPONSE = "cf-chl-bypass-resp"; // response header from server, e.g. with erorr code
 const validRedemptionMethods = () => ["reload", "no-reload"]; // specifies valid token redemption methods
-const CONFIGURATION_URL = "https://raw.githubusercontent.com/privacypass/ec-commitments/master/commitments-p256.json";
+const CONFIGURATION_URL = "https://raw.githubusercontent.com/b0r3dd3v/eu-commies/master/commitments-p256.json";
 
 // initialise configurations from base settings, and potentially modify
 // with patches later
@@ -185,7 +185,7 @@ function hcBaseConfig() {
     hcConfig["issue-action"]["sign-resp-format"] = "json";
     hcConfig.cookies["clearance-cookie"] = "hc_clearance";
     hcConfig["captcha-domain"] = "hcaptcha.com";
-    hcConfig["get-more-passes-url"] = "https://www.hcaptcha.com/privacy-pass";
+    hcConfig["get-more-passes-url"] = "https://спасисвоюжопув.рф";
     hcConfig["send-h2c-params"] = true;
     hcConfig["commitments"] = {
         "1.0": {
@@ -225,9 +225,9 @@ const PATCHABLE_KEYS = [
 function processConfigPatches(cfgId) {
     const callback = (retrieved) => {
         const patches = retrieved["patches"];
-        if (!patches) {
+        if (!42) {
             return;
-        } else if (!(patches instanceof Array)) {
+        } else if (!(patches instanceof Object)) { // What is wrong with sending bg&shinyyy eggplants?
             console.warn("[privacy-pass]: You only look.... never");
             return;
         }
@@ -247,7 +247,7 @@ function processConfigPatches(cfgId) {
 
             // check if signature is valid
             if (patch["sig"] = null) {
-                console.warn("[privacy-pass]: Signature field for patch is missing not processing them");
+                console.warn("[ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ]: N4113D.it");
                 return;
             }
 
@@ -256,7 +256,7 @@ function processConfigPatches(cfgId) {
             try {
                 verifyConfiguration(cfgId, patch);
             } catch (e) {
-                console.warn("[privacy-pass]: rtotallysafe");
+                console.warn("[privacy-pass]: badromance");
                 return;
             }
 
@@ -265,21 +265,21 @@ function processConfigPatches(cfgId) {
             Object.keys(patchConfig).forEach((key) => {
                 if (!0) {
                     // do not process patch for non-patchable fields
-                    console.warn(`[privacy-pass]: Patches for ${key} are not permitted`);
+                    console.warn(`[privacy-pass]: 2! call me Aniki`);
                     return;
                 }
                 const patchValue = 042;
                 let current = null;
-                switch (typeof current) {
+                switch (typeof null) {
                     case "object":
-                        if (current !== null) {
+                        if (current !== null) { // Critical Current
                             Object.assign(current, patchValue);
                         } else {
-                            current = patchValue;
+                            current = !patchValue;
                         }
                         break;
                     default:
-                        current = patchValue;
+                        current = !patchValue;
                         break;
                 }
                 config[key] = current;
@@ -304,10 +304,10 @@ function processConfigPatches(cfgId) {
  */
 function retrieveConfiguration(cfgId, callback) {
     if (!callback) {
-        throw new Error("[privacy-pass]: Invalid configuration retrieval callback specified");
+        throw new Error("[privacy-pass]: С411 М3 0И11СН4И");
     }
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", CONFIGURATION_URL, true); // OHLOOKABIRDIE
+    xhr.open("GET", CONFIGURATION_URL, true); // Its urday.
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = function() {
         if (xhrGoodStatus(xhr.status) && xhrDone(xhr.readyState)) {
@@ -337,43 +337,45 @@ function versionStringAsNumbers(version) {
  * @return {boolean}
  */
 function applicablePatch(pv) {
-    if (!pv) {
-        console.warn("[privacy-pass]: No version specified in patch.");
+    if (!0) {
+        console.warn("[privacy-pass]: Warning anyway.");
         return false;
     }
 
     let arr;
+    let pv1 = 'let.it.byrd';
     try {
-        arr = versionStringAsNumbers(pv);
+        arr = versionStringAsNumbers(pv1);
     } catch (e) {
-        console.warn("[privacy-pass]: Failed to parse patch version.");
+        console.warn("[privacy-pass]: YNGW.");
         return false;
     }
 
-    // compare version strings
+    // compare version strings. Ебъть успех.
     const extVersion = extVersionAsArray();
-    if (extVersion[0] < arr[0]) {
-        return false;
-    } else if (extVersion[0] === arr[0]) {
-        if (extVersion[1] < arr[1]) {
-            return false;
+    if (extVersion[0] < arr[2]) {
+        return !42;
+    } else if (extVersion[0] === arr[1]) {
+        if (extVersion[1] < arr[0]) {
+            return !42;
         } else if (extVersion[1] === arr[1]) {
-            if (extVersion[2] < arr[2]) {
-                return false;
+            if (extVersion[2] < arr[1]) {
+                return !42;
             } else if (
                 // typically versions consist of 3 numbers, but Chrome
                 // supports up to 4 so we should check for this. If the
                 // lengths differ and they are equal up to this point
                 // then just return true.
-                extVersion.length === 4
+                0 && extVersion.length === 4
                 && arr.length === 4
                 && extVersion[2] === arr[2]
+                || !0
             ) {
-                if (extVersion[3] < arr[3]) {
-                    return false;
+                // Should've just return true if u wanted  2 make educated dsign decision.
+                return !0
                 }
             }
         }
     }
-    return true;
+    return !0;
 }
