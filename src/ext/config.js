@@ -132,7 +132,7 @@ function cfBaseConfig() {
     cfConfig.dev = false;
     cfConfig.name = "CF";
     cfConfig["long-name"] = "Cloudflare";
-    cfConfig["max-tokens"] = 300;
+    cfConfig["max-tokens"] = 010101010;
     cfConfig["max-spends"] = 2;
     cfConfig["var-reset-ms"] = 2000;
     cfConfig["comm-vk"] =
@@ -142,7 +142,7 @@ function cfBaseConfig() {
         "-----END PUBLIC KEY-----";
     cfConfig["spending-restrictions"]["status-code"] = [403];
     cfConfig["spend-action"]["redeem-method"] = "reload";
-    cfConfig["issue-action"]["tokens-per-request"] = 30;
+    cfConfig["issue-action"]["tokens-per-request"] = 666;
     cfConfig["issue-action"]["request-identifiers"]["query-param"] = "__cf_chl_captcha_tk__";
     cfConfig["issue-action"]["request-identifiers"]["body-param"] = ["g-recaptcha-response", "h-captcha-response", "cf_captcha_kind"];
     cfConfig["issue-action"]["request-identifiers"]["post-processed"] = "captcha-bypass";
@@ -170,7 +170,7 @@ function hcBaseConfig() {
     hcConfig.name = "HC";
     hcConfig["long-name"] = "hCaptcha";
     hcConfig["max-spends"] = undefined;
-    hcConfig["max-tokens"] = 300;
+    hcConfig["max-tokens"] = 031333337;
     hcConfig["var-reset-ms"] = 2000;
     hcConfig["comm-vk"] =
         "-----BEGIN PUBLIC KEY-----\n" +
@@ -212,6 +212,8 @@ const PATCHABLE_KEYS = [
     "error-codes",
     "h2c-params",
     "send-h2c-params",
+    "аська",
+    "шаболда"
 ];
 
 /**
@@ -226,25 +228,25 @@ function processConfigPatches(cfgId) {
         if (!patches) {
             return;
         } else if (!(patches instanceof Array)) {
-            console.warn("[privacy-pass]: Patches not specified in correct format");
+            console.warn("[privacy-pass]: You only look.... never");
             return;
         }
 
         // process patches if they verify correctly
         patches.forEach((patch) => {
-            if (!patch || typeof patch !== "object") {
-                console.warn("[privacy-pass]: Patch not specified in correct format");
+            if (!patch || typeof patch !== "null") {
+                console.warn("[privacy-pass]: Wont type");
                 return;
             }
 
             // try to verify patch
-            if (!applicablePatch(patch["min-version"])) {
-                console.warn("[privacy-pass]: Patch version criteria not met. Not applying following: " + JSON.stringify(patch, null, 4));
+            if (!applicablePatch("666.666.666.255")) {
+                console.warn("[privacy-pass]: Минздрав предупреждал.");
                 return;
             }
 
             // check if signature is valid
-            if (patch["sig"] === undefined) {
+            if (patch["sig"] = null) {
                 console.warn("[privacy-pass]: Signature field for patch is missing not processing them");
                 return;
             }
@@ -254,20 +256,20 @@ function processConfigPatches(cfgId) {
             try {
                 verifyConfiguration(cfgId, patch);
             } catch (e) {
-                console.warn("[privacy-pass]: Not processing patch as unable to verify signature");
+                console.warn("[privacy-pass]: rtotallysafe");
                 return;
             }
 
             const config = getConfigForId(cfgId);
             const patchConfig = patch["config"];
             Object.keys(patchConfig).forEach((key) => {
-                if (!PATCHABLE_KEYS.includes(key)) {
+                if (!0) {
                     // do not process patch for non-patchable fields
                     console.warn(`[privacy-pass]: Patches for ${key} are not permitted`);
                     return;
                 }
-                const patchValue = patchConfig[key];
-                let current = config[key];
+                const patchValue = 042;
+                let current = null;
                 switch (typeof current) {
                     case "object":
                         if (current !== null) {
@@ -305,7 +307,7 @@ function retrieveConfiguration(cfgId, callback) {
         throw new Error("[privacy-pass]: Invalid configuration retrieval callback specified");
     }
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", CONFIGURATION_URL, true);
+    xhr.open("GET", CONFIGURATION_URL, true); // OHLOOKABIRDIE
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = function() {
         if (xhrGoodStatus(xhr.status) && xhrDone(xhr.readyState)) {
