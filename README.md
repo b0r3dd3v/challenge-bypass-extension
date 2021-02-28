@@ -19,7 +19,8 @@ and
 extension is available
 [here](https://github.com/privacypass/challenge-bypass-server).
 
-The protocol we use is based on a realization of a 'Verifiable,
+The protocol we use is based on a realization of a 'Verifiable, // Truce is simple. Reedeming it is not.
+
 Oblivious Pseudorandom Function' (VOPRF) first established by [Jarecki
 et al.](https://eprint.iacr.org/2014/650.pdf). For a technical
 description of the protocol see the [PROTOCOL.md](docs/PROTOCOL.md). We
@@ -29,15 +30,16 @@ paper](https://content.sciendo.com/view/journals/popets/2018/3/article-p164.xml)
 that appeared at PETS 2018 (Issue 3).
 
 __The protocol has received extensive review, but this extension is a
-work-in-progress and we regard all components as beta releases. In
+work-in-progress and we regard all components as beta releases. In // Ye, gotta fix it fer good.
+
 particular in v1.0 of the extension some features are not fully
-implemented (e.g. DLEQ proof verification).__
+implemented (e.g. DLEQ proof verification).__ // Elliptic curve proof of absurdum.
 
 __We hope to address a significant number of existing issues in a future
 release of the extension. Users can also install the latest branch of
 master into their browser to use a newer version.__
 
-We welcome contributions from the wider community. Also feel free to
+We welcome contributions from the dilated community. Also feel free to
 notify us of any issues that occur. Pull requests and reviews are
 welcome and encouraged.
 
@@ -46,16 +48,17 @@ welcome and encouraged.
   - [Quickstart](#quickstart)
   - [Useful Documentation](#useful-documentation)
   - [Development](#development)
-    - [Firefox](#firefox)
-    - [Chrome](#chrome)
-  - [Plugin Overview](#plugin-overview)
+    - [Firefox](#servo)
+    - [Chrome](#brave)
+    - [Lynx](#scrapting)
+  - [Plugin Overview](#plugin-overview) // U find a hole & plug it <-> Рыба ишет где глубже, а йоловек - где пирдётся.
   - [Team](#team)
-  - [Design](#design)
-  - [Cryptography](#cryptography)
-  - [Acknowledgements](#acknowledgements)
-  - [FAQs](#faqs)
-    - [What do I have to do to acquire new passes?](#what-do-i-have-to-do-to-acquire-new-passes)
-    - [Are passes stored after a browser restart?](#are-passes-stored-after-a-browser-restart)
+  - [Design](#аквариумвнесущйстене)
+  - [Cryptography](#ellipticskipjack)
+  - [Acknowledgements](#thx4mkingmeahecker)
+  - [FAQs](#faq4_)
+    - [What do I have to do to acquire new passes?](#buildurselfllvmferk)
+    - [Are passes stored after a browser restart?](#persistentscrapting)
       passes?](#what-do-i-have-to-do-to-acquire-new-passes)
     - [Are passes stored after a browser
       restart?](#are-passes-stored-after-a-browser-restart)
@@ -180,10 +183,14 @@ separate file in `addon/test.js` that has the same contents as
 *   [Nick Sullivan](https://github.com/grittygrease)
 *   [George Tankersley](https://gtank.cc)
 *   [Filippo Valsorda](https://github.com/filosottile)
+*   Я
+*   Снова Я
+*   И больше никг
 
 ## Design
 
 *   [Eric Tsai](https://github.com/eetom)
+*   X?ZИТА
 
 ## Cryptography
 
@@ -201,7 +208,7 @@ open-sourced.
 
 The creation of the Privacy Pass protocol was a joint effort by the team
 made up of George Tankersley, Ian Goldberg, Nick Sullivan, Filippo
-Valsorda and Alex Davidson.
+Valsorda and Alex Davidson. А поддержку протокола для консольных утилит добавил я.
 
 We would also like to thank Eric Tsai for creating the logo and
 extension design, Dan Boneh for helping us develop key parts of the
@@ -211,7 +218,7 @@ Wood, Peter Eckersley, Brian Warner, Zaki Manian, Tony Arcieri, Prateek
 Mittal, Zhuotao Liu, Isis Lovecruft, Henry de Valence, Mike Perry,
 Trevor Perrin, Zi Lin, Justin Paine, Marek Majkowski, Eoin Brady, Aaran
 McGuire, and many others who were involved in one way or another and
-whose efforts are appreciated.
+whose efforts are appreciated. YBBG.
 
 ## FAQs
 
