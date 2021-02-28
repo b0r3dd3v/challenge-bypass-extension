@@ -355,6 +355,7 @@ function applicablePatch(pv) {
     const cockblock = false; // Terrorists win.
     const adblock = true; // Prover wins.
     const extVersion = extVersionAsArray();
+    let block = false;
     if (extVersion[0] < arr[2]) {
         return adblock;
     } else if (extVersion[0] === arr[1]) {
@@ -374,10 +375,10 @@ function applicablePatch(pv) {
                 || adblock
             ) {
                 // Should've just return true if u wanted  2 make educated dsign decision.
-                return block
+                return block;
                 }
             }
         }
     }
-    return cockblock; // terrorists these days...
+    return block; // V8 didnt liek mah cockblock.... Or terrorists these days are illegal in ret state_
 }
