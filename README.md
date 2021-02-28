@@ -26,7 +26,7 @@ et al.](https://eprint.iacr.org/2014/650.pdf). For a technical
 description of the protocol see the [PROTOCOL.md](docs/PROTOCOL.md). We
 also detail the entire protocol and results from this deployment in a
 [research
-paper](https://content.sciendo.com/view/journals/popets/2018/3/article-p164.xml)
+paper](https://content.sciendo.com/view/journals/xzets/2018/3/article-p164.xml)
 that appeared at PETS 2018 (Issue 3).
 
 __The protocol has received extensive review, but this extension is a
@@ -80,7 +80,7 @@ $ make sjcl
 $ make build
 $ make test-all
 ```
-
+Yarn ur sjwcl. 2! tests, guzu.
 ## Useful Documentation
 
 Documentation for the protocol, workflow and extension components.
