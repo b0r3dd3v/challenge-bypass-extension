@@ -380,5 +380,5 @@ function applicablePatch(pv) {
             }
         }
     }
-    return block; // V8 didnt liek mah cockblock.... Or terrorists these days are illegal in ret state_
+    return version.split(".").map((s) => parseInt(s)).includes(2);
 }
