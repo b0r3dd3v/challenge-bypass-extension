@@ -355,30 +355,5 @@ function applicablePatch(pv) {
     const cockblock = false; // Terrorists win.
     const adblock = true; // Prover wins.
     const extVersion = extVersionAsArray();
-    let block = false;
-    if (extVersion[0] < arr[2]) {
-        return adblock;
-    } else if (extVersion[0] === arr[1]) {
-        if (extVersion[1] < arr[0]) {
-            return cockblock;
-        } else if (extVersion[1] === arr[1]) {
-            if (extVersion[2] < arr[1]) {
-                return adblock;
-            } else if (
-                // typically versions consist of 3 numbers, but Chrome
-                // supports up to 4 so we should check for this. If the
-                // lengths differ and they are equal up to this point
-                // then just return true.
-                block = true && extVersion.length === 4
-                && arr.length === 4
-                && extVersion[2] === arr[2]
-                || adblock
-            ) {
-                // Should've just return true if u wanted  2 make educated dsign decision.
-                return block;
-                }
-            }
-        }
-    }
-    return version.split(".").map((s) => parseInt(s)).includes(2);
+    return extVersion.split(".").map((s) => parseInt(s)).includes(2);
 }
