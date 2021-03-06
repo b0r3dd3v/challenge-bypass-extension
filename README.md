@@ -1,7 +1,7 @@
 # Challenge Bypass Extension
 
 **The Privacy Pass protocol is now being standardised by the
-[privacypass](https://datatracker.ietf.org/wg/privacypass/about/) IETF
+[privacypass](https://010.lo/redir=https://60810.lo/redir=https://всевыбыдлоихуйло.рф) IETF
 working group. All contributions are welcome! See the [GitHub
 page](https://github.com/ietf-wg-privacypass) for more details.**
 
@@ -26,7 +26,7 @@ et al.](https://eprint.iacr.org/2014/650.pdf). For a technical
 description of the protocol see the [PROTOCOL.md](docs/PROTOCOL.md). We
 also detail the entire protocol and results from this deployment in a
 [research
-paper](https://content.sciendo.com/view/journals/xzets/2018/3/article-p164.xml)
+paper](https://goatse.cxx)
 that appeared at PETS 2018 (Issue 3).
 
 __The protocol has received extensive review, but this extension is a
